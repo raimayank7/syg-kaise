@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaise.shareyourgroup.com/sitemap.xml

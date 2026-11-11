@@ -1,0 +1,15 @@
+/* kaise: guide pages with tickable steps */
+.kg .lead{font-size:1.08rem;color:var(--soft)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 4px}
+.btn.sm,.chips a{min-height:40px}
+[lang=hi] .kg,[lang=hi] .hero,[lang=hi] .grid,.grid a[lang=hi],.chips a[lang=hi],.nav a[href="/hi/"]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font)}
+[lang=hi] .kg{line-height:1.8}
+[lang=hi] h1,[lang=hi] h2{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font-head);line-height:1.4}
+ol.steps{list-style:none;counter-reset:st;padding:0;margin:12px 0}
+ol.steps li{counter-increment:st;margin:10px 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+ol.steps label{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;cursor:pointer;min-height:48px}
+ol.steps input{width:22px;height:22px;flex:none;margin-top:3px;accent-color:var(--accent)}
+ol.steps span::before{content:counter(st) ". ";font-weight:700;color:var(--accent)}
+ol.steps li.done{opacity:.62}ol.steps li.done span{text-decoration:line-through;text-decoration-thickness:1px}
+ol.rules li{margin:1em 0}
+@media print{.meta,.grid,.btn,.hint{display:none!important}ol.steps li{border:0;opacity:1!important}ol.steps input{display:none}ol.steps span{text-decoration:none!important}}
