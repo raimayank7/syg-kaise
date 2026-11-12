@@ -2,7 +2,7 @@
 .kg .lead{font-size:1.08rem;color:var(--soft)}
 .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 4px}
 .btn.sm,.chips a{min-height:40px}
-[lang=hi] .kg,[lang=hi] .hero,[lang=hi] .grid,.grid a[lang=hi],.chips a[lang=hi],.nav a[href="/hi/"]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font)}
+[lang=hi] .kg,[lang=hi] .hero,[lang=hi] .grid,.grid a[lang=hi],.chips a[lang=hi],.nav a[href="/kaise/hi/"]{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font)}
 [lang=hi] .kg{line-height:1.8}
 [lang=hi] h1,[lang=hi] h2{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',var(--font-head);line-height:1.4}
 ol.steps{list-style:none;counter-reset:st;padding:0;margin:12px 0}
