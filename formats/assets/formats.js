@@ -25,7 +25,7 @@
         if (m !== skip) m.textContent = v || '[' + k + ']';
         m.classList.toggle('done', !!v);
       });
-      var inp = box.querySelector('input[data-k="' + k.replace(/"/formats/g, '\\"') + '"]');
+      var inp = box.querySelector('input[data-k="' + k.replace(/"/g, '\\"') + '"]');
       if (inp && inp !== skip && inp.value !== v) inp.value = v;
     }
     box.addEventListener('input', function (e) { if (e.target.matches('input')) set(e.target.getAttribute('data-k'), e.target.value.trim(), e.target); });
