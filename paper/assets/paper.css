@@ -1,0 +1,15 @@
+/* paper: controls and the sheet preview */
+.ppform .fields{margin-top:6px}
+.ppform input,.ppform select{width:100%;min-height:44px;padding:8px 10px;border:1px solid var(--field-line);border-radius:8px;background:var(--field);color:var(--ink);font:inherit}
+.sheetwrap{background:var(--surface2);border:1px solid var(--line);border-radius:var(--r);padding:12px;margin:14px 0;overflow:auto;text-align:center}
+#pp-sheet svg{width:100%;height:auto;max-width:560px;box-shadow:0 2px 14px rgba(0,0,0,.25);background:#fff}
+.lead{font-size:1.05rem;color:var(--soft)}
+@media print{
+  html,body{margin:0!important;padding:0!important;background:#fff!important}
+  body.pl>*:not(#main){display:none!important}
+  body.pl #main>*:not(:has(.sheetwrap)){display:none!important}
+  body.pl .wrap{padding:0!important;max-width:none!important;margin:0!important}
+  body.pl .wrap>*:not(.sheetwrap){display:none!important}
+  body.pl .sheetwrap{border:0;padding:0;margin:0;background:none;overflow:visible}
+  body.pl #pp-sheet svg{width:auto!important;height:auto!important;max-width:none;box-shadow:none;display:block}
+}

@@ -1,0 +1,20 @@
+/* sample documents */
+.lead{font-size:1.05rem;color:var(--soft)}
+.sheet{margin:14px 0 22px}
+.letter{white-space:pre-wrap;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:18px 16px;font-size:1rem;line-height:1.65;overflow-wrap:anywhere}
+.letter mark.ph{background:#fde68a;color:#3b2a00;border-radius:4px;padding:1px 3px;cursor:pointer}
+.letter mark.ph.done{background:transparent;color:inherit;border-bottom:1px dashed var(--accent);border-radius:0;padding:0}
+.letter mark.ph:focus{outline:2px solid var(--focus);outline-offset:1px;background:#fff7d6;color:#3b2a00}
+.fill{margin:12px 0 0}.fill details{background:var(--surface2)}
+.fill .fields{grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.fill label{display:block;font-weight:600;font-size:.86rem;margin-bottom:3px;color:var(--soft)}
+.fill input{width:100%;min-height:40px;padding:6px 10px;border:1px solid var(--field-line);border-radius:8px;background:var(--field);color:var(--ink);font:inherit}
+.sheet .btn.sm{min-height:40px}
+.src{font-size:.9rem;color:var(--soft)}
+.warnbox{border-left:4px solid #d97706;background:var(--surface2);border-radius:8px;padding:10px 14px;margin:14px 0}
+#printbox{display:none}
+@media print{
+  body.pl>*:not(#main){display:none!important}
+  body.pl #main>*:not(#printbox){display:none!important}
+  body.pl #printbox{display:block!important;white-space:pre-wrap;font:12.5pt/1.7 Georgia,serif;color:#000;padding:10mm 6mm}
+}

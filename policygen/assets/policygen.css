@@ -1,0 +1,14 @@
+/* policygen: form, checkboxes, output document, print */
+.pgform fieldset{border:1px solid var(--line);border-radius:10px;margin:14px 0;padding:10px 12px}
+.pgform legend{font-weight:700;padding:0 6px}
+.pgform .fields{margin-top:10px}
+.pgform input[type=text],.pgform input[type=email],.pgform input[type=number],.pgform select{width:100%;min-height:44px;padding:8px 10px;border:1px solid var(--field-line);border-radius:8px;background:var(--field);color:var(--ink);font:inherit}
+.cks{display:grid;gap:4px 14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.ck{display:flex;align-items:center;gap:10px;min-height:40px;font-weight:500!important;cursor:pointer}
+.ck input{width:22px;height:22px;flex:none}
+.pgout{margin:8px 0 18px}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:18px 18px 8px;overflow-wrap:anywhere;line-height:1.65}
+.doc h2{font-size:1.3rem;margin-top:0}.doc h3{font-size:1.05rem;margin:1.2em 0 .3em}
+.doc mark.ph{background:#fde68a;color:#3b2a00;border-radius:4px;padding:1px 3px}
+.lead{font-size:1.05rem;color:var(--soft)}
+@media print{body.pl>*:not(#main){display:none!important}body.pl #main>*:not(.wrap){display:none!important}body.pl .wrap>*:not(.pgout){display:none!important}body.pl .pgout .acts,body.pl .pgout .hint{display:none!important}body.pl .doc{border:0;box-shadow:none;color:#000;font:12pt/1.6 Georgia,serif}}
