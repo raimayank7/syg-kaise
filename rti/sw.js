@@ -1,4 +1,4 @@
-const CACHE = 'syg-m-rti-5010c6a73a', SHELL = ["/rti/assets/site.css?v=403176beac", "/rti/assets/site.js?v=38b96724e9", "/rti/icons/logo-light.webp", "/rti/icons/logo-dark.webp"];
+const CACHE = 'syg-m-rti-75c362940e', SHELL = ["/rti/assets/site.css?v=9cff45ef36", "/rti/assets/site.js?v=38b96724e9", "/rti/icons/logo-light.webp", "/rti/icons/logo-dark.webp"];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).catch(() => {})); });
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.indexOf('syg-m-rti-') === 0 && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', e => {
